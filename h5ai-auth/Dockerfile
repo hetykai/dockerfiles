@@ -1,9 +1,8 @@
-FROM alpine:3.8
-MAINTAINER FAN VINGA<fanalcest@gmail.com>
+FROM alpine
 
 ENV H5AI_VERSION=0.29.0 \
-    USER=vinga          \
-    PASSWD=vinga        \
+    USER=h5ai          \
+    PASSWD=h5ai        \
     LD_PRELOAD=/usr/lib/preloadable_libiconv.so
 
 RUN apk --no-cache --virtual run add \
